@@ -68,14 +68,16 @@ export default function Home() {
           <ParallaxProvider>
             <div className={styles.header_section}>
             <div className={styles.overlapGrid}>
-              <Parallax speed={-10} y={[40, 60]}>
+              <Parallax speed={-25} y={[40, 60]} x={[40]}>
+                <div className={styles.header_image_1}> 
                 <Image
                   src={fusion_1}
                   alt='Ghost Hunt'
                   layout='responsive'
-                  height={300}
-                  width={250}
+                  height={70}
+                  width={40}
                 ></Image> 
+                </div>
               </Parallax>
               <Parallax speed={-10} y={[50, 70]}>
                   <Image
@@ -87,13 +89,15 @@ export default function Home() {
                   ></Image>
               </Parallax>
               <Parallax speed={-10} y={[-60, -20]}>
+              <div className={styles.header_image_3}> 
                   <Image
                     src={fusion_3}
                     alt='Ghost Hunt'
                     layout='responsive'
-                    height={300}
-                    width={250}
+                    height={140}
+                    width={90}
                   ></Image>
+              </div> 
               </Parallax>
               <Parallax speed={-10} y={[-20, 20]}>
                   <Image
