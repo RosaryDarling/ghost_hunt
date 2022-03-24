@@ -21,7 +21,7 @@ export default function Home() {
       <Head>
         <title>Ghost Hunt</title>
         <meta name="description" content="Ghost Hunt" />
-        <link rel="icon" href="/public/images/RD_.png" />
+        <link rel="icon" href='public/images/RD_.png' />
       </Head>
 
       <div className={styles.top_bar}>
@@ -33,32 +33,34 @@ export default function Home() {
           width={58}
         ></Image>
 
-        <div className={styles.icon}>
-          <Image
-            src={darling}
-            alt='Rosary Darling'
-            layout='fixed'
-            height={25}
-            width={30}
-          ></Image>
-        </div>
-        <div className={styles.icon}>
-          <Image
-            src={fusion}
-            alt='City Fusion'
-            layout='fixed'
-            height={30}
-            width={25}
-          ></Image>
-        </div>
-        <div className={styles.icon}>
-          <Image
-            src={hunt}
-            alt='Ghost Hunt'
-            layout='fixed'
-            height={30}
-            width={25}
-          ></Image>
+        <div className={styles.icons}>
+          <div className={styles.icon}>
+            <Image
+              src={darling}
+              alt='Rosary Darling'
+              layout='fixed'
+              height={25}
+              width={30}
+            ></Image>
+          </div>
+          <div className={styles.icon}>
+            <Image
+              src={fusion}
+              alt='City Fusion'
+              layout='fixed'
+              height={30}
+              width={25}
+            ></Image>
+          </div>
+          <div className={styles.icon}>
+            <Image
+              src={hunt}
+              alt='Ghost Hunt'
+              layout='fixed'
+              height={30}
+              width={25}
+            ></Image>
+          </div>
         </div>
       </div>
 
@@ -142,26 +144,26 @@ export default function Home() {
             <div>
               <Parallax >
                 <div className={styles.icon}>
-                  <Image
+                  {/* <Image
                     src={hunt}
                     alt='Ghost Hunt'
                     layout='fixed'
                     height={30}
                     width={25}
-                  ></Image>
+                  ></Image> */}
                 </div>
               </Parallax>
             </div>
             <div>
               <Parallax >
                 <div className={styles.icon}>
-                  <Image
+                  {/* <Image
                     src={hunt}
                     alt='Ghost Hunt'
                     layout='fixed'
                     height={30}
                     width={25}
-                  ></Image>
+                  ></Image> */}
                 </div>
               </Parallax>
             </div>

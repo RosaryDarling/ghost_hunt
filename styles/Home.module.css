@@ -75,8 +75,14 @@
   /* background-color: aqua; */
 }
 
+.icons {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+}
+
 .icon {
-  margin: 5px;
+  margin: 7px;
 }
 
 
