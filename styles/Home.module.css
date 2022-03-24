@@ -97,6 +97,19 @@
   max-width: 800px;
 }
 
+.overlapGrid {
+  display: grid;
+  grid-template-areas: "overlay";
+}
+
+.overlapGrid > span {
+  grid-area: overlay;
+}
+.overlapGrid > div {
+  grid-area: overlay;
+}
+
+
 .card {
   margin: 1rem;
   padding: 1.5rem;
@@ -137,4 +150,12 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+.header_section {
+  width: 300px;
+}
+
+.header_image {
+  position: relative;
 }

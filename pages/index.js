@@ -1,14 +1,19 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import Rellax from "rellax";
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax'
-
 
 import logo from '/public/images/RD_.png'
 import darling from '/public/images/darling.png'
 import fusion from '/public/images/city_fusion.png'
 import hunt from '/public/images/ghost_hunt.png'
+
+import fusion_1 from '/public/images/header/city_fusion/Line 4.png'
+import fusion_2 from '/public/images/header/city_fusion/Line 5.png'
+import fusion_3 from '/public/images/header/city_fusion/Rectangle.png'
+import fusion_4 from '/public/images/header/city_fusion/Rectangle1.png'
+import fusion_5 from '/public/images/header/city_fusion/Rectangle2.png'
+import fusion_6 from '/public/images/header/city_fusion/Rectangle3.png'
 
 export default function Home() {
   return (
@@ -20,8 +25,7 @@ export default function Home() {
       </Head>
 
       <div className={styles.top_bar}>
-
-        <Image 
+        <Image
           src={logo}
           alt='Rosary Darling'
           layout='fixed'
@@ -30,7 +34,7 @@ export default function Home() {
         ></Image>
 
         <div className={styles.icon}>
-          <Image 
+          <Image
             src={darling}
             alt='Rosary Darling'
             layout='fixed'
@@ -38,7 +42,6 @@ export default function Home() {
             width={30}
           ></Image>
         </div>
-
         <div className={styles.icon}>
           <Image
             src={fusion}
@@ -48,9 +51,8 @@ export default function Home() {
             width={25}
           ></Image>
         </div>
-
         <div className={styles.icon}>
-          <Image 
+          <Image
             src={hunt}
             alt='Ghost Hunt'
             layout='fixed'
@@ -60,20 +62,99 @@ export default function Home() {
         </div>
       </div>
 
+
       <main className={styles.main}>
         <div className={styles.header}>
-            <div></div>
-            <div></div>
-            <div></div>
+          <ParallaxProvider>
+            <div className={styles.header_section}>
+            <div className={styles.overlapGrid}>
+              <Parallax speed={-10} y={[40, 60]}>
+                <Image
+                  src={fusion_1}
+                  alt='Ghost Hunt'
+                  layout='responsive'
+                  height={300}
+                  width={250}
+                ></Image> 
+              </Parallax>
+              <Parallax speed={-10} y={[50, 70]}>
+                  <Image
+                    src={fusion_2}
+                    alt='Ghost Hunt'
+                    layout='responsive'
+                    height={300}
+                    width={250}
+                  ></Image>
+              </Parallax>
+              <Parallax speed={-10} y={[-60, -20]}>
+                  <Image
+                    src={fusion_3}
+                    alt='Ghost Hunt'
+                    layout='responsive'
+                    height={300}
+                    width={250}
+                  ></Image>
+              </Parallax>
+              <Parallax speed={-10} y={[-20, 20]}>
+                  <Image
+                    src={fusion_4}
+                    alt='Ghost Hunt'
+                    layout='responsive'
+                    height={300}
+                    width={250}
+                  ></Image> 
+              </Parallax>
+              <Parallax speed={-10} y={[-20, 20]}>
+                  <Image
+                    src={fusion_5}
+                    alt='Ghost Hunt'
+                    layout='responsive'
+                    height={300}
+                    width={250}
+                  ></Image>
+              </Parallax>
+              <Parallax speed={-10} y={[-20, 20]}>
+                  <Image
+                    src={fusion_6}
+                    alt='Ghost Hunt'
+                    layout='responsive'
+                    height={300}
+                    width={250}
+                  ></Image>
+              </Parallax>
+              </div>
+            </div>
+          
+
+
+            <div>
+              <Parallax >
+                <div className={styles.icon}>
+                  <Image
+                    src={hunt}
+                    alt='Ghost Hunt'
+                    layout='fixed'
+                    height={30}
+                    width={25}
+                  ></Image>
+                </div>
+              </Parallax>
+            </div>
+            <div>
+              <Parallax >
+                <div className={styles.icon}>
+                  <Image
+                    src={hunt}
+                    alt='Ghost Hunt'
+                    layout='fixed'
+                    height={30}
+                    width={25}
+                  ></Image>
+                </div>
+              </Parallax>
+            </div>
+          </ParallaxProvider>
         </div>
-        <div className={styles.title}>
-      <ParallaxProvider offsetYMin={200} offsetYMax={1500}>
-        <div><h2>Moving A</h2></div>
-      </ParallaxProvider>
-      <ParallaxProvider offsetYMin={-500} offsetYMax={2000}>
-        <h2>Moving C</h2>
-      </ParallaxProvider>
-    </div>
 
 
 
