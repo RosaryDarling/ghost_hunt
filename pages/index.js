@@ -67,68 +67,76 @@ export default function Home() {
         <div className={styles.header}>
           <ParallaxProvider>
             <div className={styles.header_section}>
-            <div className={styles.overlapGrid}>
-              <Parallax speed={-25} y={[40, 60]} x={[40]}>
-                <div className={styles.header_image_1}> 
-                <Image
-                  src={fusion_1}
-                  alt='Ghost Hunt'
-                  layout='responsive'
-                  height={70}
-                  width={40}
-                ></Image> 
-                </div>
-              </Parallax>
-              <Parallax speed={-10} y={[50, 70]}>
-                  <Image
-                    src={fusion_2}
-                    alt='Ghost Hunt'
-                    layout='responsive'
-                    height={300}
-                    width={250}
-                  ></Image>
-              </Parallax>
-              <Parallax speed={-10} y={[-60, -20]}>
-              <div className={styles.header_image_3}> 
-                  <Image
-                    src={fusion_3}
-                    alt='Ghost Hunt'
-                    layout='responsive'
-                    height={140}
-                    width={90}
-                  ></Image>
-              </div> 
-              </Parallax>
-              <Parallax speed={-10} y={[-20, 20]}>
-                  <Image
-                    src={fusion_4}
-                    alt='Ghost Hunt'
-                    layout='responsive'
-                    height={300}
-                    width={250}
-                  ></Image> 
-              </Parallax>
-              <Parallax speed={-10} y={[-20, 20]}>
-                  <Image
-                    src={fusion_5}
-                    alt='Ghost Hunt'
-                    layout='responsive'
-                    height={300}
-                    width={250}
-                  ></Image>
-              </Parallax>
-              <Parallax speed={-10} y={[-20, 20]}>
-                  <Image
-                    src={fusion_6}
-                    alt='Ghost Hunt'
-                    layout='responsive'
-                    height={300}
-                    width={250}
-                  ></Image>
-              </Parallax>
+              <div className={styles.overlapGrid}>
+                <Parallax speed={-15} y={[40, 60]} x={[40]}>
+                  <div className={styles.header_image_1}>
+                    <Image
+                      src={fusion_1}
+                      alt='Ghost Hunt'
+                      layout='responsive'
+                      height={70}
+                      width={40}
+                    ></Image>
+                  </div>
+                </Parallax>
+                <Parallax speed={-18} y={[40, 60]} x={[40]}>
+                  <div className={styles.header_image_2}>
+                    <Image
+                      src={fusion_2}
+                      alt='Ghost Hunt'
+                      layout='responsive'
+                      height={50}
+                      width={50}
+                    ></Image>
+                  </div>
+                </Parallax>
+                <Parallax speed={-10} y={[-60, -20]}>
+                  <div className={styles.header_image_3}>
+                    <Image
+                      src={fusion_3}
+                      alt='Ghost Hunt'
+                      layout='responsive'
+                      height={140}
+                      width={90}
+                    ></Image>
+                  </div>
+                </Parallax>
+                <Parallax speed={-20} y={[-20, 20]}>
+                  <div className={styles.header_image_4}>
+                    <Image
+                      src={fusion_4}
+                      alt='Ghost Hunt'
+                      layout='responsive'
+                      height={170}
+                      width={100}
+                    ></Image>
+                  </div>
+                </Parallax>
+                <Parallax speed={-5} y={[-10, 15]}>
+                  <div className={styles.header_image_5}>
+                    <Image
+                      src={fusion_5}
+                      alt='Ghost Hunt'
+                      layout='responsive'
+                      height={30}
+                      width={170}
+                    ></Image>
+                  </div>
+                </Parallax>
+                <Parallax speed={-10} y={[-20, 20]}>
+                  <div className={styles.header_image_6}>
+                    <Image
+                      src={fusion_6}
+                      alt='Ghost Hunt'
+                      layout='responsive'
+                      height={45}
+                      width={55}
+                    ></Image>
+                  </div>
+                </Parallax>
               </div>
             </div>
-          
+
 
 
             <div>
