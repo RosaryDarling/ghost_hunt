@@ -1,6 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Rellax from "rellax";
+import { Parallax, ParallaxProvider } from 'react-scroll-parallax'
+
 
 import logo from '/public/images/RD_.png'
 import darling from '/public/images/darling.png'
@@ -17,13 +20,15 @@ export default function Home() {
       </Head>
 
       <div className={styles.top_bar}>
+
         <Image 
           src={logo}
           alt='Rosary Darling'
           layout='fixed'
-          height={30}
-          width={60}
+          height={28}
+          width={58}
         ></Image>
+
         <div className={styles.icon}>
           <Image 
             src={darling}
@@ -33,6 +38,7 @@ export default function Home() {
             width={30}
           ></Image>
         </div>
+
         <div className={styles.icon}>
           <Image
             src={fusion}
@@ -42,6 +48,7 @@ export default function Home() {
             width={25}
           ></Image>
         </div>
+
         <div className={styles.icon}>
           <Image 
             src={hunt}
@@ -54,11 +61,23 @@ export default function Home() {
       </div>
 
       <main className={styles.main}>
+        <div className={styles.header}>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div className={styles.title}>
+      <ParallaxProvider offsetYMin={200} offsetYMax={1500}>
+        <div><h2>Moving A</h2></div>
+      </ParallaxProvider>
+      <ParallaxProvider offsetYMin={-500} offsetYMax={2000}>
+        <h2>Moving C</h2>
+      </ParallaxProvider>
+    </div>
 
 
 
-
-        <div className={styles.grid}>
+        {/* <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h2>Documentation &rarr;</h2>
             <p>Find in-depth information about Next.js features and API.</p>
@@ -86,7 +105,8 @@ export default function Home() {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
-        </div>
+        </div> */}
+
       </main>
 
       <footer className={styles.footer}>
