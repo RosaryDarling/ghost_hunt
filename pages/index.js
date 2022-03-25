@@ -280,7 +280,7 @@ export default function Home() {
                   </div>
                 </Parallax>
                 <Parallax speed={-20} y={[-20, 20]}>
-                  <div className={styles.header_image_4}>
+                  <div className={styles.header_image_34}>
                     <Image
                       src={hunt_4}
                       alt='Ghost Hunt'
@@ -291,24 +291,24 @@ export default function Home() {
                   </div>
                 </Parallax>
                 <Parallax speed={-5} y={[-10, 15]}>
-                  <div className={styles.header_image_5}>
+                  <div className={styles.header_image_35}>
                     <Image
                       src={hunt_5}
                       alt='Ghost Hunt'
                       layout='responsive'
-                      height={30}
-                      width={170}
+                      height={120}
+                      width={30}
                     ></Image>
                   </div>
                 </Parallax>
                 <Parallax speed={-10} y={[-20, 20]}>
-                  <div className={styles.header_image_6}>
+                  <div className={styles.header_image_36}>
                     <Image
                       src={hunt_6}
                       alt='Ghost Hunt'
                       layout='responsive'
-                      height={45}
-                      width={55}
+                      height={75}
+                      width={65}
                     ></Image>
                   </div>
                 </Parallax>

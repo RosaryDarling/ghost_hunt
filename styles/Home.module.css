@@ -267,14 +267,14 @@
   position: relative;
   height: 100%;
   width: 300px;
-  padding-top: 245px;
+  padding-top: 265px;
 }
 
 .header_image_32 {
   position: relative;
   height: 100%;
   width: 250px;
-  padding-top: 260px;
+  padding-top: 275px;
 }
 
 .header_image_33 {
@@ -282,5 +282,30 @@
   height: 100%;
   width: 260px;
   padding-left: 45px;
+  padding-top: 40px;
 }
+
+.header_image_34 {
+  position: relative;
+  height: 100%;
+  width: 278px;
+  padding-left: 60px;
+}
+
+.header_image_35 {
+  position: relative;
+  height: 100%;
+  width: 150px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.header_image_36 {
+  position: relative;
+  height: 100%;
+  width: 295px;
+  padding-left: 200px;
+}
+
+
 
