@@ -24,7 +24,12 @@ import darling_6 from '/public/images/header/darling/Rectangle4.png'
 import darling_7 from '/public/images/header/darling/Rectangle5.png'
 
 
-
+import hunt_1 from '/public/images/header/hunt/Line 2.png'
+import hunt_2 from '/public/images/header/hunt/Line 3.png'
+import hunt_3 from '/public/images/header/hunt/Rectangle.png'
+import hunt_4 from '/public/images/header/hunt/Rectangle2.png'
+import hunt_5 from '/public/images/header/hunt/Rectangle3.png'
+import hunt_6 from '/public/images/header/hunt/Rectangle4.png'
 
 
 export default function Home() {
@@ -242,34 +247,34 @@ export default function Home() {
             <div className={styles.header_section}>
               <div className={styles.overlapGrid}>
                 <Parallax speed={-15} y={[40, 60]} x={[40]}>
-                  <div className={styles.header_image_1}>
+                  <div className={styles.header_image_31}>
                     <Image
-                      src={fusion_1}
+                      src={hunt_1}
                       alt='Ghost Hunt'
                       layout='responsive'
-                      height={70}
-                      width={40}
+                      height={1}
+                      width={200}
                     ></Image>
                   </div>
                 </Parallax>
                 <Parallax speed={-18} y={[40, 60]} x={[40]}>
-                  <div className={styles.header_image_2}>
+                  <div className={styles.header_image_32}>
                     <Image
-                      src={fusion_2}
+                      src={hunt_2}
                       alt='Ghost Hunt'
                       layout='responsive'
-                      height={50}
-                      width={50}
+                      height={1}
+                      width={150}
                     ></Image>
                   </div>
                 </Parallax>
                 <Parallax speed={-10} y={[-60, -20]}>
-                  <div className={styles.header_image_3}>
+                  <div className={styles.header_image_33}>
                     <Image
-                      src={fusion_3}
+                      src={hunt_3}
                       alt='Ghost Hunt'
                       layout='responsive'
-                      height={140}
+                      height={90}
                       width={90}
                     ></Image>
                   </div>
@@ -277,7 +282,7 @@ export default function Home() {
                 <Parallax speed={-20} y={[-20, 20]}>
                   <div className={styles.header_image_4}>
                     <Image
-                      src={fusion_4}
+                      src={hunt_4}
                       alt='Ghost Hunt'
                       layout='responsive'
                       height={170}
@@ -288,7 +293,7 @@ export default function Home() {
                 <Parallax speed={-5} y={[-10, 15]}>
                   <div className={styles.header_image_5}>
                     <Image
-                      src={fusion_5}
+                      src={hunt_5}
                       alt='Ghost Hunt'
                       layout='responsive'
                       height={30}
@@ -299,7 +304,7 @@ export default function Home() {
                 <Parallax speed={-10} y={[-20, 20]}>
                   <div className={styles.header_image_6}>
                     <Image
-                      src={fusion_6}
+                      src={hunt_6}
                       alt='Ghost Hunt'
                       layout='responsive'
                       height={45}
@@ -311,7 +316,6 @@ export default function Home() {
             </div>
 
 
-            
           </ParallaxProvider>
         </div>
 
