@@ -10,12 +10,12 @@ import separator_1 from '/public/images/line1.png'
 import separator_2 from '/public/images/line2.png'
 import separator_3 from '/public/images/line3.png'
 
-export default function Ghost_hunt() {
+export default function City_fusion() {
     return (
         <main className={styles.main_section}>
             <div className={styles.section_divider}>
                 <Image
-                    src={hunt}
+                    src={fusion}
                     alt='Ghost Hunt'
                     layout='fixed'
                     height={30}
@@ -23,7 +23,7 @@ export default function Ghost_hunt() {
                 ></Image>
                 <div className={styles.section_divider_line}>
                     <Image
-                        src={separator_1}
+                        src={separator_2}
                         alt='Ghost Hunt'
                         layout='responsive'
                         height={1}

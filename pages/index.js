@@ -3,6 +3,8 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax'
 import Ghost_hunt from './ghost_hunt'
+import City_fusion from './city_fusion'
+import Rosary_darling from './rosary_darling'
 
 import logo from '/public/images/RD_.png'
 import darling from '/public/images/darling.png'
@@ -316,6 +318,8 @@ export default function Home() {
         </div>
 
         <Ghost_hunt/>
+        <City_fusion/>
+        <Rosary_darling/>
 
       </main>
 

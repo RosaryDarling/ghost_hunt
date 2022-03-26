@@ -10,20 +10,20 @@ import separator_1 from '/public/images/line1.png'
 import separator_2 from '/public/images/line2.png'
 import separator_3 from '/public/images/line3.png'
 
-export default function Ghost_hunt() {
+export default function Rosary_darling() {
     return (
         <main className={styles.main_section}>
             <div className={styles.section_divider}>
                 <Image
-                    src={hunt}
+                    src={darling}
                     alt='Ghost Hunt'
                     layout='fixed'
-                    height={30}
-                    width={25}
+                    height={25}
+                    width={30}
                 ></Image>
                 <div className={styles.section_divider_line}>
                     <Image
-                        src={separator_1}
+                        src={separator_3}
                         alt='Ghost Hunt'
                         layout='responsive'
                         height={1}
