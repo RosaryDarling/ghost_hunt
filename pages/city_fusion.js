@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax'
 
@@ -13,14 +14,18 @@ import separator_3 from '/public/images/line3.png'
 export default function City_fusion() {
     return (
         <main className={styles.main_section}>
-            <div className={styles.section_divider}>
-                <Image
-                    src={fusion}
-                    alt='Ghost Hunt'
-                    layout='fixed'
-                    height={30}
-                    width={25}
-                ></Image>
+            <div className={styles.section_divider} id="fusion">
+                <button className={styles.button}>
+                    <Link href="/" passHref>
+                        <Image
+                            src={fusion}
+                            alt='Ghost Hunt'
+                            layout='fixed'
+                            height={30}
+                            width={25}
+                        ></Image>
+                    </Link>
+                </button>
                 <div className={styles.section_divider_line}>
                     <Image
                         src={separator_2}

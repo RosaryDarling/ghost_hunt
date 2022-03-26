@@ -66,6 +66,13 @@
   font-size: 1.5rem;
 }
 
+.button {
+  scroll-behavior: smooth;
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+
 .top_bar {
   height: 10vh;
   width: 100vh;

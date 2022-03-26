@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax'
 import Ghost_hunt from './ghost_hunt'
@@ -55,31 +56,43 @@ export default function Home() {
 
         <div className={styles.icons}>
           <div className={styles.icon}>
-            <Image
-              src={darling}
-              alt='Rosary Darling'
-              layout='fixed'
-              height={25}
-              width={30}
-            ></Image>
+            <button className={styles.button}>
+              <Link href="#darling" passHref>
+                <Image
+                  src={darling}
+                  alt='Rosary Darling'
+                  layout='fixed'
+                  height={25}
+                  width={30}
+                ></Image>
+              </Link>
+            </button>
           </div>
           <div className={styles.icon}>
-            <Image
-              src={fusion}
-              alt='City Fusion'
-              layout='fixed'
-              height={30}
-              width={25}
-            ></Image>
+            <button className={styles.button}>
+              <Link href="#fusion" passHref>
+                <Image
+                  src={fusion}
+                  alt='City Fusion'
+                  layout='fixed'
+                  height={30}
+                  width={25}
+                ></Image>
+              </Link>
+            </button>
           </div>
           <div className={styles.icon}>
-            <Image
-              src={hunt}
-              alt='Ghost Hunt'
-              layout='fixed'
-              height={30}
-              width={25}
-            ></Image>
+            <button className={styles.button}>
+              <Link href="#hunt" passHref>
+                <Image
+                  src={hunt}
+                  alt='Ghost Hunt'
+                  layout='fixed'
+                  height={30}
+                  width={25}
+                ></Image>
+              </Link>
+            </button>
           </div>
         </div>
       </div>
@@ -317,9 +330,9 @@ export default function Home() {
           </ParallaxProvider>
         </div>
 
-        <Ghost_hunt/>
-        <City_fusion/>
-        <Rosary_darling/>
+        <Ghost_hunt />
+        <City_fusion />
+        <Rosary_darling />
 
       </main>
 
