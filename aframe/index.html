@@ -1,0 +1,41 @@
+<html>
+
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script> 
+    <script src="https://raw.githack.com/fcor/arjs-gestures/master/dist/gestures.js"></script>
+
+  <head>
+    <title>Ghost_Hunt</title>
+    <meta name="Ghost-Hunt" content="Text - A-Frame">
+    <script src="../../../dist/aframe-master.js"></script>
+  </head>
+  <body>
+    <a-scene>
+
+      <!-- Spacing. -->
+      <a-assets>
+        <a-camera><img id="bar" src="https://cdn.glitch.global/e3ad363f-ef72-4e10-a716-d60476d095cf/bar-test.png?v=1648495695158"></a-camera>
+        <a-camera><img id="button1" src="https://cdn.glitch.global/e3ad363f-ef72-4e10-a716-d60476d095cf/heart-solid.png?v=1648662290607"></a-camera>
+        <a-camera><img id="button2" src="https://cdn.glitch.global/e3ad363f-ef72-4e10-a716-d60476d095cf/hint_button.png?v=1648662290648"></a-camera>
+        <a-camera><img id="map" src="https://cdn.glitch.global/e3ad363f-ef72-4e10-a716-d60476d095cf/bar-test.png?v=1648495695158"></a-camera>
+        
+          <a-mixin
+          id="button_style"
+          geometry="primitive: plane; width: 1; height: 0.4"
+          padding-top: 5
+         ></a-mixin>
+        
+        
+      </a-assets>
+
+      <a-image  src="#bar" width="10" height="1" position="0 -2.5 -8" rotation="0 0 0"></a-image>
+      <a-image mixin="button_style" src="#button1"  position=" -3 -2.5 -8" rotation="0 0 0"></a-image>
+      <a-image src="#button2" width="1" height="0.4" position=" -1 -2.5 -8" rotation="0 0 0"></a-image>
+      
+      
+    </a-scene>
+  </body>
+</html>
+
+
+<!-- width="1" height="0.4" -->
