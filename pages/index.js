@@ -103,6 +103,20 @@ export default function Home() {
           <ParallaxProvider>
             <div className={styles.header_section}>
               <div className={styles.overlapGrid}>
+
+                <button className={styles.fusion_test_button}>
+                  <Link href="https://balsam-sustaining-bonobo.glitch.me" passHref>
+                    <Image
+                      src={fusion}
+                      alt='City Fusion - test'
+                      layout='fixed'
+                      height={30}
+                      width={25}
+                    ></Image>
+                  </Link>
+                </button>
+
+
                 <Parallax speed={-15} y={[40, 60]} x={[40]}>
                   <div className={styles.header_image_1}>
                     <Image

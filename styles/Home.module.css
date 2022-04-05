@@ -337,3 +337,12 @@
 }
 
 
+.fusion_test_button {
+  scroll-behavior: smooth;
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+  position: relative;
+  margin-top: -750px;
+  margin-right: 40px;
+}
