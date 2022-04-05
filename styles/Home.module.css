@@ -1,6 +1,7 @@
 .container {
   padding: 0 2rem;
   background-color: black;
+  width: 100%;
 }
 
 .main {
@@ -103,13 +104,13 @@
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
-.grid {
+/* .grid {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   max-width: 800px;
-}
+} */
 
 .overlapGrid {
   display: grid;
@@ -333,7 +334,7 @@
 }
 
 .section_divider_line {
-  min-width: 90vw;
+  min-width: 95%;
   padding-left: 20px;
 }
 
