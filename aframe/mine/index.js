@@ -1,5 +1,6 @@
 import * as THREE from 'https://unpkg.com/three@0.139.2/build/three.module.js';
 import {ARButton} from 'https://unpkg.com/three@0.139.2/examples/jsm/webxr/ARButton.js';
+// import { VRButton } from 'three/examples/jsm/webxr/VRButton.js';
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(
@@ -10,6 +11,10 @@ renderer.xr.enabled = true;
 
 const button = ARButton.createButton(renderer)
 document.body.appendChild(button)
+
+//from example: https://threejs.org/docs/#manual/en/introduction/How-to-create-VR-content
+// document.body.appendChild( VRButton.createButton( renderer ) );
+// renderer.xr.enabled = true;
 
 renderer.setSize(innerWidth, innerHeight)
 renderer.setPixelRatio(devicePixelRatio)
@@ -36,7 +41,14 @@ scene.add(light)
 
 function animate () {
 	requestAnimationFrame(animate)
-	renderer.render(scene, camera, button)
+	renderer.render(scene, camera)
 }
+
+//from example: https://threejs.org/docs/#manual/en/introduction/How-to-create-VR-content
+// renderer.setAnimationLoop( function () {
+
+// 	renderer.render( scene, camera );
+
+// } );
 
 animate()

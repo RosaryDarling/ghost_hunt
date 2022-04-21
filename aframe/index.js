@@ -1,4 +1,5 @@
 import * as THREE from 'https://unpkg.com/three@0.139.2/build/three.module.js';
+import {ARButton} from 'https://unpkg.com/three@0.139.2/examples/jsm/webxr/ARButton.js';
   
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(
@@ -12,7 +13,8 @@ renderer.setPixelRatio(devicePixelRatio)
 
 document.body.appendChild(renderer.domElement)
 
-
+const button = ARButton.createButton(renderer)
+document.body.appendChild(button)
 // const BoxGeometry = new THREE.BoxGeometry(1, 1, 1)
 // const material = new THREE.MeshBasicMaterial({
 // 	color:0x00FF00
