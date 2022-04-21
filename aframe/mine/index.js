@@ -1,12 +1,15 @@
 import * as THREE from 'https://unpkg.com/three@0.139.2/build/three.module.js';
-// import * as AR from "https://raw.githack.com/AR-js-org/AR.js/master/three.js/build/ar.js";
+import {ARButton} from 'https://unpkg.com/three@0.139.2/examples/jsm/webxr/ARButton.js';
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(
 	75, innerWidth / innerHeight, 0.1, 1000
 )
 const renderer = new THREE.WebGLRenderer()
+renderer.xr.enabled = true;
 
+const button = ARButton.createButton(renderer)
+document.body.appendChild(button)
 
 renderer.setSize(innerWidth, innerHeight)
 renderer.setPixelRatio(devicePixelRatio)
@@ -33,7 +36,7 @@ scene.add(light)
 
 function animate () {
 	requestAnimationFrame(animate)
-	renderer.render(scene, camera)
+	renderer.render(scene, camera, button)
 }
 
 animate()
